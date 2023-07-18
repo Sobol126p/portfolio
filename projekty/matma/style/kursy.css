@@ -1,0 +1,182 @@
+@media screen and (max-width: 1300px) {
+
+    .grid-kurs-name {
+        display: grid;
+        grid-template-columns: auto 790px auto;
+        grid-template-rows: 60px;
+        margin-top: 150px;
+    }
+
+    .grid_kursy {
+        display: grid;
+        grid-template-columns: auto 250px 250px 250px auto;
+        grid-template-rows: 250px 250px 250px;
+    }
+
+    .kurs {
+        width: 90%;
+        height: 90%;
+        border: dashed 1px black;
+        box-shadow: 0px 0px 10px 10px rgb(121, 121, 121);
+    }
+}
+
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+
+
+
+
+@media screen and (max-width: 800px) {
+
+    .grid-kurs-name {
+        display: grid;
+        grid-template-columns: auto 600px auto;
+        grid-template-rows: 60px;
+
+    }
+
+    .grid-kursy {
+        display: grid;
+        grid-template-columns: auto 180px 180px 180px auto;
+        grid-template-rows: 180px 180px 180px;
+        gap: 30px;
+        margin-top: 80px;
+        text-align: center;
+    }
+
+    .kurs {
+        width: 90%;
+        height: 90%;
+        border: dashed 1px black;
+        box-shadow: 0px 0px 10px 10px rgb(121, 121, 121);
+    }
+
+}
+
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 1300px) {
+
+    .grid-kurs-name {
+        display: grid;
+        grid-template-columns: auto 900px auto;
+        grid-template-rows: 60px;
+        margin-top: 150px;
+    }
+
+    .grid_kursy {
+        display: grid;
+        grid-template-columns: auto 300px 300px 300px auto;
+        grid-template-rows: auto auto auto;
+    }
+
+    .kurs {
+        width: 90%;
+        height: 90%;
+        border: dashed 1px black;
+        box-shadow: 0px 0px 10px 10px rgb(121, 121, 121);
+    }
+}
+
+
+
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+*/
+
+
+
+@media screen and (min-width: 1620px) {
+
+
+    .grid-kurs-name {
+        display: grid;
+        grid-template-columns: auto 1400px auto;
+        grid-template-rows: 60px;
+
+    }
+
+    .grid-kursy {
+        display: grid;
+        grid-template-columns: auto 300px 300px 300px 300px auto;
+        grid-template-rows: 300px 300px 300px;
+        gap: 40px;
+        margin-top: 150px;
+        text-align: center;
+    }
+
+    .kurs {
+
+        width: 100%;
+        height: 100%;
+        border: dashed 1px rgb(62, 62, 62);
+        box-shadow: 0px 0px 10px 10px rgba(121, 121, 121, 0.183);
+        cursor: pointer;
+    }
+
+    .kurs:hover {
+        border: solid 1px black;
+        box-shadow: 0px 0px 10px 10px rgba(121, 121, 121, 0.427);
+    }
+
+}
+
+
+
+/*<footer class="footer down">
+        <div></div>
+        <div>
+            <a href="functions_ol/register.html" class="tdn">
+                <h6>Rejestracja</h6>
+            </a>
+        </div>
+        <div>
+            <a href="functions_ol/onas.html#kontakt" class="tdn">
+                <h6>Kontakt</h6>
+            </a>
+        </div>
+        <div>
+            <a href="functions_ol/kursy.html" class="tdn">
+                <h6>Nasze Kursy</h6>
+            </a>
+        </div>
+        <div>
+            <a href="functions_ol/onas.html#onas" class="tdn">
+                <h6>O nas</h6>
+            </a>
+        </div>
+        <div>
+            <a href="functions_ol/onas.html#regulamin" class="tdn">
+                <h6>Regulamin</h6>
+            </a>
+        </div>
+        <div>
+            <h6></h6>
+        </div>
+        <div>
+            <h6></h6>
+        </div>
+        <div>
+            <h6></h6>
+        </div>
+        <div>
+            <h6></h6>
+        </div>
+        <div></div>
+    </footer>
+        
+    </div>*/

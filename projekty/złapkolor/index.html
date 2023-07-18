@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pl" class="custom">
+
+<head>
+    <title>KOLORSY</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <MARQUEE>
+        <div class="pt" id="pt"></div>
+    </MARQUEE>
+    <div class="start" onclick="go()" id="start">START</div>
+    <div class="click" id="click" onmouseover="red()"></div>
+    <div class="click1" id="click1" onmouseover="yellow()"></div>
+    <div class="click2" id="click2" onmouseover="blue()"></div>
+    <div class="click3" id="click3" onmouseover="green()"></div>
+    <div class="click4" id="click4" onmouseover="event_ball_pkt()">10 PKT</div>
+    <div class="click5" id="click5" onmouseover="event_ball_slow()">Bonus</div>
+    <div class="napisP" id="napisP"></div>
+    <div class="point" id="point"></div>
+
+
+    <div id="update" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 class="title">Statystyki:</h2>
+            </div>
+            <div class="modal-body">
+
+                <div style="padding-bottom: 20px;" class="statsdiv" id="statc"></div>
+
+                <div style="padding-bottom: 20px;" class="statsdiv" id="statp"></div>
+
+                <div style="padding-bottom: 20px;" class="statsdiv" id="statpc"></div>
+
+                <div style="padding-bottom: 20px;" class="statsdiv" id="statk"></div>
+
+                <div style="padding-bottom: 20px;" class="statsdiv" id="statkc"></div>
+
+                <div style="padding-bottom: 20px;" class="close" onclick="c()"> Zamknij - starzałka w góre </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
