@@ -1,0 +1,191 @@
+.sklep_pr {
+    position: absolute;
+    display: block;
+    top: 20px;
+    width: clamp(35%, 55%, 60%);
+    height: 98%;
+    overflow: scroll;
+    backdrop-filter: blur(4px);
+}
+
+.sklep_pr::-webkit-scrollbar {
+    width: 10px
+}
+
+.sklep_pr::-webkit-scrollbar-track {
+    display: none;
+    height: 100px;
+}
+
+.sklep_pr::-webkit-scrollbar-thumb {
+    background-color: rgb(249, 255, 88);
+    border-radius: 20px;
+}
+
+
+.sklep_menu_pr {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+    gap: 40px;
+    justify-content: center;
+}
+
+
+.grid_tytul {
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 80px;
+}
+
+
+.galeria_zakupy1 {
+
+    z-index: 1;
+    width: 90%;
+    height: 350px;
+    border: 8px double rgb(145, 100, 15);
+    border-radius: 5px;
+    transition-duration: 0.1s;
+    background-color: rgb(145, 100, 15, 0.5);
+    cursor: pointer;
+}
+
+.galeria_zakupy1:hover {
+    border: 5px solid rgb(145, 100, 15);
+    transform: translateX(-5%) translateY(-3%);
+    box-shadow: 20px 20px 30px 5px rgb(145, 100, 15, 0.5);
+    background-color: rgba(145, 100, 15, 0.6);
+
+}
+
+.galeria_zakupy2 {
+
+    z-index: 1;
+    width: 90%;
+    height: 350px;
+    border: 8px double rgb(158, 158, 158);
+    border-radius: 5px;
+    transition-duration: 0.1s;
+    background-color: rgba(158, 158, 158, 0.5);
+    cursor: pointer;
+}
+
+.galeria_zakupy2:hover {
+    border: 5px solid rgb(158, 158, 158);
+    ;
+    transform: translateX(-5%) translateY(-3%);
+    box-shadow: 20px 20px 30px 5px rgba(158, 158, 158, 0.5);
+    background-color: rgba(158, 158, 158, 0.6);
+
+}
+
+.galeria_zakupy3 {
+
+    z-index: 1;
+    width: 90%;
+    height: 350px;
+    border: 8px double rgb(247, 231, 0);
+    border-radius: 5px;
+    transition-duration: 0.1s;
+    background-color: rgba(247, 231, 0, 0.5);
+    cursor: pointer;
+}
+
+.galeria_zakupy3:hover {
+    border: 5px solid rgb(247, 231, 0);
+    transform: translateX(-5%) translateY(-3%);
+    box-shadow: 20px 20px 30px 5px rgba(247, 231, 0, 0.5);
+    background-color: rgba(247, 231, 0, 0.6);
+
+}
+
+.galeria_zakupy4 {
+
+    z-index: 1;
+    width: 90%;
+    height: 350px;
+    border: 8px double rgb(25, 134, 206);
+    border-radius: 5px;
+    transition-duration: 0.1s;
+    background-color: rgba(25, 134, 206, 0.5);
+    cursor: pointer;
+}
+
+.galeria_zakupy4:hover {
+    border: 5px solid rgb(25, 134, 206);
+    transform: translateX(-5%) translateY(-3%);
+    box-shadow: 20px 20px 30px 5px rgba(25, 134, 206, 0.5);
+    background-color: rgba(25, 134, 206, 0.6);
+
+}
+
+.galeria_zakupy5 {
+
+    z-index: 1;
+    width: 90%;
+    height: 350px;
+    border: 8px double rgb(138, 19, 182);
+    border-radius: 5px;
+    transition-duration: 0.1s;
+    background-color: rgba(139, 19, 182, 0.5);
+    cursor: pointer;
+}
+
+.galeria_zakupy5:hover {
+    border: 5px solid rgb(138, 19, 182);
+    transform: translateX(-5%) translateY(-3%);
+    box-shadow: 20px 20px 30px 5px rgba(139, 19, 182, 0.5);
+    background-color: rgba(139, 19, 182, 0.6);
+
+}
+
+.galeria_zakupy6 {
+
+    z-index: 1;
+    width: 90%;
+    height: 350px;
+    border: 8px double rgb(194, 18, 18);
+    border-radius: 5px;
+    transition-duration: 0.1s;
+    background-color: rgba(194, 18, 18, 0.5);
+    cursor: pointer;
+}
+
+.galeria_zakupy6:hover {
+    border: 5px solid rgb(194, 18, 18);
+    transform: translateX(-5%) translateY(-3%);
+    box-shadow: 20px 20px 30px 5px rgba(194, 18, 18, 0.5);
+    background-color: rgba(194, 18, 18, 0.6);
+
+}
+
+.tlo {
+    width: auto;
+    height: auto;
+    background: url("../images/drewno_mc.png");
+}
+
+/*@keyframes animacja_sklep {
+
+
+    0% {
+        border-top-left-radius: 20%;
+        border-bottom-left-radius: 0%;
+    }
+
+    33% {
+        border-top-right-radius: 20%;
+        border-top-left-radius: 0%
+    }
+
+    67% {
+        border-bottom-right-radius: 20%;
+        border-top-right-radius: 0%;
+    }
+
+    100% {
+        border-bottom-right-radius: 0%;
+        border-bottom-left-radius: 20%;
+    }
+
+}*/

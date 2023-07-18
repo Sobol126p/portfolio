@@ -1,0 +1,206 @@
+/*--------------------------------------------REJESTRACJA-----------------------------------------------*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+.reg_pr {
+    position: absolute;
+    display: block;
+    top: 20px;
+    width: clamp(35%, 45%, 50%);
+    height: 98%;
+    overflow: scroll;
+    backdrop-filter: blur(4px);
+
+}
+
+.reg_pr::-webkit-scrollbar {
+    width: 10px
+}
+
+.reg_pr::-webkit-scrollbar-track {
+    display: none;
+    height: 100px;
+}
+
+.reg_pr::-webkit-scrollbar-thumb {
+    background-color: rgb(249, 255, 88);
+    border-radius: 20px;
+}
+
+
+.grid_reg_form {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px;
+}
+
+.input {
+    width: 300px;
+    height: 45px;
+    border: 3px solid black;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+}
+
+.reg_button {
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    font-family: 'Rubik';
+    color: rgba(0, 0, 0, 0.8);
+    transition-duration: 0.5s;
+    margin-top: 25px;
+    padding-left: 17px;
+}
+
+.log_button {
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    font-family: 'Rubik';
+    color: rgba(0, 0, 0, 0.8);
+    transition-duration: 0.5s;
+    margin-top: 25px;
+    padding-left: 50px;
+}
+
+.reg_button:hover,.log_button:hover {
+    color: rgb(255, 191, 0);
+}
+
+
+/* <?php
+                        echo "<div class=" . 'test_3' . " style=" . 'color: red;' . ">" . $_GET['tekst_zwrotny'];
+                        ".</div>";
+                        ?>*/
+
+
+
+
+/*--------------------------------------------KONTAKT-----------------------------------------------*/
+
+.kontakt_pr {
+    display: none;
+    position: absolute;
+    display: block;
+    top: 20px; 
+    width: clamp(600px, 45%, 1000px);
+    height: 98%;
+    overflow: scroll;
+    backdrop-filter: blur(4px);
+}
+
+
+.kontakt_pr::-webkit-scrollbar {
+    width: 10px
+}
+
+.kontakt_pr::-webkit-scrollbar-track {
+    display: none;
+    height: 100px;
+}
+
+.kontakt_pr::-webkit-scrollbar-thumb {
+    background-color: rgb(249, 255, 88);
+    border-radius: 20px;
+}
+
+
+
+.grid_kontakt_pr {
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 180px 60px 60px 60px 100px;
+    margin-bottom: 100px;
+}
+
+.pytanie {
+    transition-duration: 0.3s;
+    cursor: pointer;
+}
+
+.pytanie:hover {
+    color: rgb(255, 178, 36);
+}
+
+.mail_pr {
+    color: #dc4003;
+    display: inline;
+    cursor: pointer;
+    display: inline;
+}
+
+.mail_pr:hover {
+    text-decoration: underline;
+}
+
+.discord_pr {
+    color: #7289da;
+    display: inline;
+    cursor: pointer;
+    display: inline;
+}
+
+.discord_pr:hover {
+    text-decoration: underline;
+}
+
+
+
+/*------------------------------------------- ADMIN ------------------------------------------------*/
+
+.admin_hub_grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 49%));
+    gap: 20px;
+    justify-content: center;
+}
+
+
+.admin_hub_cards1 {
+    height: auto;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.admin_hub_cards2 {
+    height: auto;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.admin_userslist_grid
+{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 70px;
+    background-color: rgba(0, 0, 0, 0.444);
+}
+
+.admin_pr
+{
+    position: absolute;
+    display: block;
+    top: 20px;
+    width: clamp(60%, 70%, 80%);
+    height: 98%;
+    overflow: scroll;
+    backdrop-filter: blur(4px);
+}
+
+.admin_pr::-webkit-scrollbar {
+    width: 10px
+}
+
+.admin_pr::-webkit-scrollbar-track {
+    display: none;
+    height: 100px;
+}
+
+.admin_pr::-webkit-scrollbar-thumb {
+    background-color: rgb(249, 255, 88);
+    border-radius: 20px;
+}

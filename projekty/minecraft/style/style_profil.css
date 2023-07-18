@@ -1,0 +1,272 @@
+.profil_pr {
+    position: absolute;
+    display: block;
+    top: 20px;
+    width: clamp(35%, 45%, 50%);
+    height: 98%;
+    overflow: scroll;
+    backdrop-filter: blur(4px);
+}
+
+.profil_pr::-webkit-scrollbar {
+    width: 10px
+}
+
+.profil_pr::-webkit-scrollbar-track {
+    display: none;
+    height: 100px;
+}
+
+.profil_pr::-webkit-scrollbar-thumb {
+    background-color: rgb(249, 255, 88);
+    border-radius: 20px;
+}
+
+
+.grid_pow_nick_pr {
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 100px;
+    margin-bottom: 100px;
+}
+
+.grid_statystyki_pr {
+    display: grid;
+    grid-template-columns: 5% 90% 5%;
+    grid-template-rows: 130px 70px 70px 70px 70px 70px;
+    margin-bottom: 400px;
+}
+
+
+
+.ustawienia_button_pr {
+    display: grid;
+    color: rgb(149, 4, 4);
+    font-size: 30px;
+    cursor: pointer;
+    transition: 0.3s;
+    float: right;
+}
+
+.ustawienia_button_pr:hover {
+    transform: rotate(50deg);
+    color: rgb(210, 210, 210);
+    padding-top: 1px;
+}
+
+
+.scena_ustawienia {
+    display: none;
+    position: fixed;
+    padding-top: 100px;
+    z-index: 2;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+
+.ustawienia_profilu_pr {
+    position: relative;
+    width: minmax(200px, 400px);
+    height: 300px;
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.816);
+    -webkit-animation: sett_animate 2s;
+    animation: sett_animate 2s;
+}
+
+@-webkit-keyframes sett_animate {
+    from {
+        top: -200px;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes sett_animate {
+    from {
+        top: -200px;
+        opacity: 0;
+    }
+
+    to {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+
+.modal_sett {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 10%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-sett-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 95%;
+    height: auto;
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: rgb(142, 0, 0);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header-pr {
+    padding: 4px 16px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(122, 1, 1);
+    padding-left: 10px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+.modal-body-pr {
+    padding: 30px 15px 30px 15px;
+    background-color: rgba(46, 46, 46, 0.679);
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.5);
+}
+
+.modal-footer-pr {
+    padding: 4px 16px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    height: 60px;
+    width: 100%;
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.5);
+}
+
+.input_pr {
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 250px;
+    height: 30px;
+    padding-top: 5px;
+}
+
+.button_pr {
+    border: 2px solid white;
+    border-radius: 5px;
+    width: auto;
+    height: 30px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+}
+
+.button_pr:hover {
+    border-color: rgb(255, 208, 0);
+}
+
+
+.grid_profil_statystyki {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 260px));
+    justify-content: center;
+}
+
+.profil_statystyki_box {
+    width: 200px;
+    height: 30px;
+    /*display: inline;*/
+    text-align: center;
+}
+
+.prof_hover:hover {
+    color: rgb(169, 169, 169);
+    cursor: pointer;
+}
+
+.stats_user_list {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: 10px;
+}
+
+.szukaj_gracza {
+    border: 2px solid black;
+    height: 20px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.49);
+    color: white;
+}
+
+.top_users_wybor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 170px));
+    justify-content: center;
+}
+
+
+.top15_tytul {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+}
+
+
+.top15_tabelka {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: 70px;
+    justify-content: center;
+}
