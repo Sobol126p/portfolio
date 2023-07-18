@@ -1,0 +1,131 @@
+ <div class="chat-border">
+                <div class="chat-border-wew">
+                    <?php
+                    include 'functions/conn.php';
+                    $i = 0;
+                    $wynik = mysqli_query($conn, "SELECT `login_`,`text` FROM `test` ORDER BY `id_mess` DESC LIMIT 8;");
+
+                    for ($i = 0; $i <= 4; $i++) {
+                        $chat = mysqli_fetch_assoc($wynik);
+                        echo '<div class="chat-nick">' . $chat['login_'] . ': </div><div class="chat-mess">' . $chat['text'] . '</div><br><br>';
+                    }
+
+                    echo '
+                    <div style="top: 30px; position: relative; width:85%;"><form method="POST" action="functions/mess_send.php">
+                        <input type="hidden" name="login" value="' . $_SESSION["login"] . '">
+                        <input type="hidden" name="id_user" value="' . $_SESSION["id_user"] . '">
+                        <input name="mess" placeholder="napisz coś">
+                        <input type="submit" value="wyślij">
+                    </form></div>';
+                    ?>
+                </div>
+            </div>
+
+
+
+            .chat-nick
+{
+font-size: 13px;
+font-family: Arial, Helvetica, sans-serif;
+color: black;
+float: left;
+border: 1px solid black;
+padding: 4px;
+}
+
+.chat-mess
+{
+font-size: 13px;
+font-family: Arial, Helvetica, sans-serif;
+color: rgb(4, 11, 31);
+border: 1px solid black;
+float: left;
+max-width:40px;
+padding: 4px;
+}
+
+.chat-border {
+    text-align: center;
+    background-color: #4BC146;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    width: 33%;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.chat-border-wew {
+    text-align: center;
+    background-color: #43D978;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+    height: 94%;
+    border-bottom: 2px dashed black;
+    border-left: 2px dashed black;
+    border-right: 2px dashed black;
+}
+
+<div class="b1">
+                             <div class="b2"></div>
+                             <div class="b2"></div>
+                             <div class="b2"></div>
+                         </div>
+
+
+
+
+
+
+
+
+
+
+
+                         ////////////////////////////////////////////////////////////////////sklep///////////
+
+                         <div class="sklep-blok" id="sklep-blok">
+                <div class="sklep-blok-wew">
+                    <div class="s1">
+                        <div class="s2">
+                            <div style="float:right; position:relative; bottom:15px; right:15px; font-size: 50px; cursor:pointer;" onclick="sklep_off()">&times;</div>
+                        </div>
+                        <div class="s2" style="font-size: 45px;font-weight: 700;">SKLEP</div>
+                        <div class="s2"></div>
+                    </div>
+                    <div class="t1_sklep"></div>
+                    <div class="t1_sklep"></div>
+                    <div class="t1_sklep">
+                        <?php echo '<div style="float: left;" class="sklep_text1" id="mala_hala">Fabryka LVL1:' . $_SESSION['mala_hala_prod'] . ' </div>'; ?>
+                        <div style="float:left;"></div>
+                    </div>
+                    <div class="t1_sklep">
+                        <?php echo '<div style="float: left;" class="sklep_text1" id="srednia_hala">Fabryka LVL2:' . $_SESSION['srednia_hala_prod'] . ' </div>'; ?>
+                        <div style="float:left;"></div>
+                    </div>
+                    <div class="t1_sklep">
+                        <?php echo '<div style="float: left;" class="sklep_text1" id="duza_hala">Fabryka LVL3:' . $_SESSION['duza_hala_prod'] . ' </div>'; ?>
+                        <div style="float:left;"></div>
+                    </div>
+                    <div class="t1_sklep">
+                        <?php echo '<div style="float: left;" class="sklep_text1" id="maly_magazyn">Mały magazyn:' . $_SESSION['maly_magazyn'] . ' </div>'; ?>
+                        <div style="float:left;"></div>
+                    </div>
+                    <div class="t1_sklep">
+                        <?php echo '<div style="float: left;" id="sredni_magazyn">Średni magazyn:' . $_SESSION['sredni_magazyn'] . ' </div>'; ?>
+                        <div style="float:left;"></div>
+                    </div>
+                    <div class="t1_sklep">
+                        <?php echo '<div style="float: left;" id="duzy_magazyn">Duży magazyn:' . $_SESSION['duzy_magazyn'] . ' </div>'; ?>
+                        <div style="float:left;"></div>
+                    </div>
+                    <div id="baner" class="info-sklep-baner">
+                        <div id="info"></div>
+
+                    </div>
+                </div>
+            </div>

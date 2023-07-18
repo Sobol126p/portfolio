@@ -1,0 +1,234 @@
+.body {
+    margin: 0px;
+}
+
+.top {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(7, 154, 5);
+}
+
+.top1
+{
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+.monety-top
+{
+    text-align: center;
+    margin-left: auto;
+    margin-top: 2%;
+    margin-right: auto;
+    width: 60%;
+    height: 68%;
+    background-color: #3afb7e;
+    border-radius: 20px;
+}
+
+.d1 {
+    width: auto;
+}
+
+.d2 {
+    width: 33.3%;
+    height: 150px;
+    float: left;
+}
+
+.b1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 100px;
+    
+}
+
+.b2 {
+    width: 33.3%;
+    
+    height: 100%;
+    float: left
+}
+
+.t1_menu {
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(35, 35, 35);
+    width: 110px;
+    height: 50px;
+    font-weight: 800;
+    font-size: 25px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 30px;
+}
+
+.t1_menu:hover {
+    color: rgb(0, 0, 0);
+}
+
+.t1_sklep {
+    margin-left: auto;
+    margin-right: auto;
+    color: rgb(35, 35, 35);
+    width: 90%;
+    height: 50px;
+    font-weight: 400;
+    font-size: 20px;
+    border-radius: 30px;
+}
+
+.info-sklep-baner
+{
+    display: none;
+    width: 90%;
+    height: 150px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+}
+
+.sklep_text1
+{
+    font-size: 25px;
+    font-weight: 600;
+
+}
+
+.fabryki-blok
+{
+    display: none;
+    margin-top: 5%;
+    z-index: 1;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 700px;
+    border-radius: 45px;
+    background-color: #4BC146;
+}
+
+.produkcja-blok
+{
+    display: none;
+    margin-top: 5%;
+    z-index: 1;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 700px;
+    border-radius: 45px;
+    background-color: #4BC146;
+}
+
+.produkcja-cena
+{
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+    width: 80%;
+    height: 110px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px dashed black;
+}
+
+.magazyn-blok
+{
+    display: block;
+    margin-top: 5%;
+    z-index: 1;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 700px;
+    border-radius: 45px;
+    background-color: #4BC146;
+}
+
+.button-dodaj
+{
+    height: 40px;
+    width: 100px;
+}
+
+.cena-baner
+{
+    width: 80%;
+    height: 30px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px dashed black;
+}
+
+.s1
+{
+    width: 100%;
+}
+
+.s2
+{    
+    width: 33.3%;
+    height: 50px;
+    float: right;
+}
+
+
+.blok {
+    text-align: center;
+    background-color: #4BC146;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 700px;
+}
+
+.blok_wew {
+    text-align: center;
+    background-color: #43D978;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    height: 98%;
+    border-bottom: 2px dashed black;
+    border-left: 2px dashed black;
+    border-right: 2px dashed black;
+}
+
+.sklep-blok {
+    display: none;
+    margin-top: 5%;
+    z-index: 1;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px;
+    border-radius: 45px;
+    background-color: #4BC146;
+}
+
+.sklep-blok-wew {
+    text-align: center;
+    position: relative;
+    width: 95%;
+    height: 95%;
+    border-radius: 40px;
+    top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #43D978;
+    border: 2px dashed black;
+}
+
+.tab1
+{
+    margin-left: auto;
+    margin-right: auto;
+}
